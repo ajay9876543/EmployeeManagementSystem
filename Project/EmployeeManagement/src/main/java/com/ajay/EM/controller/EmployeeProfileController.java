@@ -10,5 +10,6 @@ public class EmployeeProfileController {
     @GetMapping("/profile")
     public String profile(Authentication auth) {
         return "Hello " + auth.getName();
-    }
+ }
 }
+
