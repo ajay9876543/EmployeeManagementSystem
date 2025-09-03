@@ -7,9 +7,10 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/employee")
 public class EmployeeProfileController {
 
-    @GetMapping("/profile")
-    public String profile(Authentication auth) {
-        return "Hello " + auth.getName();
+ @GetMapping("/profile")
+ public String profile(Authentication auth) {
+ return "Hello " + auth.getName();
  }
 }
+
 
